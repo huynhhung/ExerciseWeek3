@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal"
+    tools:context="com.example.inspiron.exerciseweek3.MovieDetailActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imgPosterDetail"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Title"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tvTitleMovieDetail"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imgPosterDetail"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvReleaseDate"
+        android:layout_marginTop="20dp"
+        android:text="Release Date"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/tvTitleMovieDetail"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/rbReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvReleaseDate"
+        android:layout_alignStart="@+id/tvReleaseDate"
+        android:layout_below="@+id/tvReleaseDate"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rbReview"
+        android:text="Desciption"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tvOverview"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
